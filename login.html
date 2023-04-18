@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="login.css">
+  <link rel="icon" type="image/x-icon" href="covFav (2).png">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+  <title>FLYERS | Login-Signup</title>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html"><img src="covImgLogo.png" alt="LOGO"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa" onclick="hideMenu()">×</i>
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="aircraft.html" active>Aircraft</a></li>
+                
+                <li> <a href="https://simpleflying.com/category/aviation-news/">News</a></li>
+                
+                <li> <a href="mailto:sachin.modha113126@marwadiuniversity.ac.in">Contact us</a></li>
+            </ul>
+        </div>
+        <i class="fa" onclick="showMenu()">=</i>
+      </nav>
+
+
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="log.php">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Remember Me  <a href="#">Forget Password</a></label>
+                      
+                    </div>
+                    <button>Log in</button>
+                    <div class="register">
+                        <p>Don't have a account <a href="#">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- JS FOR MENU-->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+          navLinks.style.right = "0";
+        }
+        function hideMenu(){
+          navLinks.style.right = "-200px";
+        }
+  
+      </script>
+</body>
+</html>
